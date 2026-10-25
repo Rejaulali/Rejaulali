@@ -27,3 +27,7 @@ Research illustrations are intentionally conceptual and must not be presented as
 
 ## Privacy-ready edition
 Material names, research methods, device details and project results have been replaced by neutral placeholders on the homepage, Research, Gallery, and CV pages. Publications remain empty. To update the existing GitHub site, upload the revised HTML files and overwrite their earlier versions. Keep assets/ and data/ in place.
+
+
+## Light editorial design
+The site now uses off-white, light gray, muted aqua, and very small red/yellow accents. Edit `assets/style.css` to change colors. Upload all files and folders to GitHub, replacing existing files.
