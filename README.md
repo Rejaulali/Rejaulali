@@ -23,3 +23,7 @@ Open `index.html` in a browser. For publications loaded from JSON, use a local s
 
 ## Notes
 Research illustrations are intentionally conceptual and must not be presented as experimental results. No DOI, affiliation beyond known BITS Pilani information, or professional profile URLs were invented. The site supports keyboard navigation, responsive layouts, and reduced-motion preferences. Google Fonts requires internet; fallback fonts are included.
+
+
+## Privacy-ready edition
+Material names, research methods, device details and project results have been replaced by neutral placeholders on the homepage, Research, Gallery, and CV pages. Publications remain empty. To update the existing GitHub site, upload the revised HTML files and overwrite their earlier versions. Keep assets/ and data/ in place.
