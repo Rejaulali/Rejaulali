@@ -1,25 +1,934 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Academic profile and research portfolio of Rejaul, PhD researcher at BITS Pilani.">
-<title>Rejaul | Academic Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Personal academic portfolio of Rejaul Ali. Research, publications, academic CV and professional connections.">
+<title>Rejaul Ali | Academic Portfolio</title>
+
 <style>
-:root{--bg:#fafafa;--paper:#fff;--ink:#242c30;--muted:#647076;--line:#e2e6e6;--aqua:#237f81;--red:#b65b53;--yellow:#c9a34b}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 system-ui,-apple-system,'Segoe UI',sans-serif}a{color:inherit}a:focus-visible,button:focus-visible{outline:3px solid var(--aqua);outline-offset:3px}.wrap{width:min(1080px,calc(100% - 44px));margin:auto}header{position:sticky;top:0;z-index:10;background:#fafafaf5;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}.nav{display:flex;justify-content:space-between;align-items:center;min-height:70px;gap:18px}.brand{text-decoration:none;font-weight:750;letter-spacing:.07em;font-size:15px}.brand span{color:var(--red)}nav .links{display:flex;gap:21px;flex-wrap:wrap}nav .links a{text-decoration:none;font-size:13px;color:#455157}nav .links a:hover{color:var(--aqua)}.menu{display:none;background:white;border:1px solid var(--line);padding:7px 12px;border-radius:6px}.hero{padding:104px 0 90px;display:grid;grid-template-columns:1.4fr .6fr;gap:65px;align-items:center}.eyebrow{color:var(--aqua);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.15em}h1{font-family:Georgia,'Times New Roman',serif;font-weight:400;font-size:clamp(42px,5.6vw,70px);line-height:1.13;letter-spacing:-.035em;margin:17px 0 24px}h2{font:400 clamp(30px,3.2vw,42px)/1.2 Georgia,serif;margin:9px 0 18px}h3{font-size:18px;font-weight:650;margin:12px 0 8px}.lead{color:#526067;font-size:18px;max-width:650px}.accent{color:var(--aqua)}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:29px}.btn{display:inline-block;text-decoration:none;background:var(--aqua);color:white;padding:11px 19px;border-radius:5px;font-size:14px;font-weight:650;border:1px solid var(--aqua);transition:transform .2s,background .2s}.btn:hover{transform:translateY(-2px);background:#176568}.btn.alt{background:transparent;color:var(--ink);border-color:#cbd4d3}.art{aspect-ratio:1;background:linear-gradient(145deg,#edf4f3,#fff 70%);border:1px solid var(--line);border-radius:50%;position:relative;max-width:310px;width:100%;margin:auto}.art:before,.art:after{content:"";position:absolute;border-radius:50%;border:1px solid #8db7b5;inset:20%}.art:after{inset:33%;background:#dceae8;border:0;box-shadow:0 0 0 17px #edf4f3}.dot{position:absolute;width:13px;height:13px;background:var(--red);border-radius:50%;top:17%;left:25%}.dot.two{background:var(--yellow);top:75%;left:73%;width:17px;height:17px}section{padding:78px 0;border-top:1px solid var(--line)}.section-head{max-width:700px;margin-bottom:32px}p{margin:8px 0 18px;color:#56636a}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--paper);border:1px solid var(--line);border-radius:7px;padding:27px;min-height:185px}.num{font-size:12px;color:var(--red);font-weight:700;letter-spacing:.1em}.card p{font-size:14px}.tags{display:flex;flex-wrap:wrap;gap:10px}.tag{padding:8px 13px;border:1px solid #d8e1df;border-radius:4px;background:#fff;font-size:14px}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:35px}.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.gallery .slot{background:#eef1f0;border:1px dashed #cbd3d1;border-radius:6px;min-height:170px;display:flex;align-items:center;justify-content:center;text-align:center;padding:18px;color:#73807f;font-size:14px}.list{list-style:none;margin:0;padding:0}.list li{padding:17px 0;border-bottom:1px solid var(--line)}.small{font-size:13px;color:var(--muted)}footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:13px}.foot{display:flex;justify-content:space-between;gap:15px}.fade{opacity:0;transform:translateY(12px);transition:opacity .55s,transform .55s}.fade.visible{opacity:1;transform:none}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.fade{opacity:1;transform:none;transition:none}}@media(max-width:760px){.menu{display:block}.nav{flex-wrap:wrap}.links{display:none!important;width:100%;padding:5px 0 15px;flex-direction:column;gap:8px!important}.links.open{display:flex!important}.hero{grid-template-columns:1fr;padding:65px 0;gap:35px}.art{max-width:220px}.grid,.gallery,.two-col{grid-template-columns:1fr}section{padding:60px 0}.foot{flex-direction:column}}
+:root {
+  --bg: #fafbfb;
+  --white: #ffffff;
+  --grey: #f0f3f3;
+  --text: #263238;
+  --muted: #66757a;
+  --aqua: #168c8c;
+  --red: #b75a52;
+  --yellow: #c7a348;
+  --border: #e1e7e7;
+  --shadow: 0 12px 35px rgba(30,50,55,.05);
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 105px;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.7;
+}
+
+a { color: inherit; }
+
+.container {
+  width: min(1120px, 90%);
+  margin: auto;
+}
+
+section { padding: 85px 0; }
+
+.section-label {
+  color: var(--aqua);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+h1, h2, h3 {
+  line-height: 1.25;
+  letter-spacing: -.5px;
+}
+
+h1 { font-size: clamp(38px, 5vw, 66px); }
+h2 { font-size: clamp(28px, 3vw, 38px); }
+h3 { font-size: 20px; }
+
+p { color: var(--muted); }
+
+.section-intro {
+  max-width: 700px;
+  margin-bottom: 35px;
+}
+
+/* NAVIGATION */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(250,251,251,.96);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-container {
+  max-width: 1200px;
+  min-height: 76px;
+  margin: auto;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.nav-logo {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 19px;
+  font-weight: 750;
+  letter-spacing: .7px;
+  white-space: nowrap;
+}
+
+.nav-logo span { color: var(--aqua); }
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 32px;
+}
+
+.nav-links a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #45545a;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 0;
+  transition: color .25s ease;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  width: 100%;
+  height: 2px;
+  background: var(--aqua);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--aqua);
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after,
+.nav-links a:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.menu-toggle {
+  display: none;
+  border: 1px solid var(--border);
+  background: white;
+  border-radius: 8px;
+  padding: 9px 13px;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+/* PROGRESS BAR */
+
+.progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background: var(--aqua);
+  z-index: 2000;
+}
+
+/* HERO */
+
+.hero {
+  padding: 115px 0 105px;
+  background:
+    radial-gradient(circle at 85% 20%, #e8f5f3, transparent 38%),
+    var(--bg);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.3fr .7fr;
+  align-items: center;
+  gap: 65px;
+}
+
+.hero h1 { margin: 16px 0 22px; }
+
+.hero h1 span { color: var(--aqua); }
+
+.hero-description {
+  font-size: 18px;
+  max-width: 620px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 7px;
+  padding: 12px 22px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: transform .25s, background .25s;
+}
+
+.btn:hover { transform: translateY(-3px); }
+
+.btn-primary {
+  background: var(--aqua);
+  color: white;
+}
+
+.btn-outline {
+  border: 1px solid var(--border);
+  background: white;
+}
+
+.hero-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 32px;
+  box-shadow: var(--shadow);
+}
+
+.hero-card .line {
+  width: 45px;
+  height: 4px;
+  background: var(--yellow);
+  margin-bottom: 25px;
+}
+
+.hero-card strong {
+  display: block;
+  margin-bottom: 7px;
+}
+
+/* CARDS */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.card {
+  background: white;
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-radius: 11px;
+  transition: transform .3s, box-shadow .3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+}
+
+.card .number {
+  color: var(--red);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.card h3 { margin: 15px 0 10px; }
+
+.soft-section { background: var(--grey); }
+
+/* PROJECTS */
+
+.project-details {
+  margin-top: 14px;
+  border-top: 1px solid var(--border);
+  padding-top: 14px;
+}
+
+summary {
+  cursor: pointer;
+  color: var(--aqua);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* GALLERY */
+
+.gallery-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.filter-btn {
+  border: 1px solid var(--border);
+  background: white;
+  border-radius: 30px;
+  padding: 9px 19px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+  transition: .25s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--aqua);
+  color: white;
+  border-color: var(--aqua);
+}
+
+.gallery-card {
+  overflow: hidden;
+  padding: 0;
+}
+
+.gallery-placeholder {
+  height: 190px;
+  background:
+    linear-gradient(135deg, #e3eeee, #f7f8f8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #87999a;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.gallery-caption { padding: 20px; }
+
+/* TIMELINE */
+
+.timeline {
+  border-left: 2px solid var(--border);
+  padding-left: 30px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -37px;
+  top: 8px;
+  width: 12px;
+  height: 12px;
+  background: var(--aqua);
+  border-radius: 50%;
+}
+
+.timeline-item h3 { margin: 5px 0; }
+
+/* CONTACT */
+
+.contact-box {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 35px;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.contact-links a {
+  color: var(--aqua);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-links a:hover { text-decoration: underline; }
+
+/* FOOTER */
+
+footer {
+  border-top: 1px solid var(--border);
+  padding: 25px 0;
+  text-align: center;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* SCROLL REVEAL */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity .7s ease, transform .7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .grid { grid-template-columns: repeat(2, 1fr); }
+
+  .menu-toggle { display: block; }
+
+  .nav-container {
+    flex-wrap: wrap;
+    padding: 12px 5%;
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding-bottom: 12px;
+  }
+
+  .nav-links.open { display: flex; }
+
+  .nav-links a {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+  }
+}
+
+@media (max-width: 560px) {
+  section { padding: 65px 0; }
+  .hero { padding: 75px 0; }
+  .grid { grid-template-columns: 1fr; }
+  .hero-card { padding: 24px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+.gallery-card[hidden] {
+  display: none !important;
+}
+
 </style>
 </head>
+
 <body>
-<header><div class="wrap nav"><a class="brand" href="#home">REJAUL<span>.</span> RESEARCH</a><button class="menu" id="menu" aria-expanded="false" aria-controls="links">Menu ☰</button><nav class="links" id="links" aria-label="Main navigation"><a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#gallery">Gallery</a><a href="#cv">CV</a><a href="#contact">Contact</a></nav></div></header>
+
+<div class="progress" id="progress"></div>
+
+<!-- NAVIGATION -->
+
+<header class="navbar">
+  <nav class="nav-container" aria-label="Main navigation">
+    <a class="nav-logo" href="#home">REJAUL ALI<span>.</span></a>
+
+    <button class="menu-toggle"
+            id="menuToggle"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+            aria-controls="navLinks">
+      &#9776;
+    </button>
+
+    <div class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#cv">CV</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
 <main>
-<div class="wrap hero" id="home"><div class="fade"><div class="eyebrow">PhD Research Scholar · BITS Pilani</div><h1>Research, ideas &amp; <span class="accent">new possibilities.</span></h1><p class="lead">I am a doctoral researcher in Electrical and Electronics Engineering at BITS Pilani. This is a space for my academic work, selected projects, and professional connections.</p><div class="actions"><a class="btn" href="#research">View research</a><a class="btn alt" href="#contact">Get in touch</a></div></div><div class="art fade" aria-hidden="true"><span class="dot"></span><span class="dot two"></span></div></div>
-<section id="about"><div class="wrap fade"><div class="eyebrow">01 / Introduction</div><h2>About me</h2><div class="two-col"><p>I am pursuing my PhD at BITS Pilani, Pilani Campus, in the Department of Electrical and Electronics Engineering. My interests include experimental research, electronic devices, and their future applications.</p><p>I welcome academic discussions, potential collaborations, international postdoctoral opportunities, and connections with semiconductor R&amp;D teams.</p></div></div></section>
-<section id="research"><div class="wrap"><div class="section-head fade"><div class="eyebrow">02 / Work</div><h2>Research projects</h2><p>Specific project titles, materials, methods, and findings will be added when ready for public release.</p></div><div class="grid"><article class="card fade"><span class="num">PROJECT 01</span><h3>Title to be added</h3><p>Project description to be added.</p></article><article class="card fade"><span class="num">PROJECT 02</span><h3>Title to be added</h3><p>Project description to be added.</p></article><article class="card fade"><span class="num">PROJECT 03</span><h3>Title to be added</h3><p>Project description to be added.</p></article></div></div></section>
-<section id="publications"><div class="wrap fade"><div class="eyebrow">03 / Writing</div><h2>Publications</h2><div class="card"><p>Publication titles, journal details, and DOI links will be added here after verification and approval for public display.</p><p class="small">No publications listed yet.</p></div></div></section>
-<section id="gallery"><div class="wrap"><div class="section-head fade"><div class="eyebrow">04 / Visual archive</div><h2>Research gallery</h2><p>Selected figures, photographs, and project visuals will appear here.</p></div><div class="gallery"><div class="slot fade">Image placeholder 01</div><div class="slot fade">Image placeholder 02</div><div class="slot fade">Image placeholder 03</div></div></div></section>
-<section id="cv"><div class="wrap fade"><div class="eyebrow">05 / Background</div><h2>Academic CV</h2><div class="two-col"><div><h3>Education</h3><ul class="list"><li><strong>PhD — Electrical &amp; Electronics Engineering</strong><div class="small">BITS Pilani, Pilani Campus</div></li><li><strong>Prior education</strong><div class="small">Additional details to be added</div></li></ul></div><div><h3>Skills and experience</h3><div class="tags"><span class="tag">Skill to be added</span><span class="tag">Technique to be added</span><span class="tag">Experience to be added</span></div><p class="small" style="margin-top:22px">A downloadable PDF CV can be linked here once available.</p></div></div></div></section>
-<section id="contact"><div class="wrap fade"><div class="eyebrow">06 / Connect</div><h2>Let's connect.</h2><p>Open to academic collaboration, postdoctoral research opportunities, and semiconductor industry conversations.</p><div class="actions"><a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn (add profile URL)</a><a class="btn alt" href="https://scholar.google.com/" target="_blank" rel="noopener noreferrer">Google Scholar (add profile URL)</a></div><p class="small">Replace the generic profile links above with your own before sharing publicly.</p></div></section>
-</main><footer><div class="wrap foot"><span>© <span id="year"></span> Rejaul · Academic portfolio</span><span>Single-file website · GitHub Pages</span></div></footer>
+
+<!-- HOME -->
+
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div class="reveal">
+      <div class="section-label">Academic Portfolio</div>
+
+      <h1>Hello, I'm <span>Rejaul Ali.</span></h1>
+
+      <p class="hero-description">
+        PhD Research Scholar in Electrical and Electronics
+        Engineering at BITS Pilani, Pilani Campus.
+      </p>
+
+      <p>
+        My academic interests include emerging electronic
+        technologies, experimental research, and the
+        development of next-generation intelligent systems.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#research">
+          Explore Research
+        </a>
+        <a class="btn btn-outline" href="#contact">
+          Get in Touch
+        </a>
+      </div>
+    </div>
+
+    <aside class="hero-card reveal">
+      <div class="line"></div>
+
+      <strong>Current Position</strong>
+      <p>PhD Research Scholar</p>
+
+      <strong>Institution</strong>
+      <p>BITS Pilani, Pilani Campus</p>
+
+      <strong>Department</strong>
+      <p>Electrical &amp; Electronics Engineering</p>
+
+      <strong>Professional Interests</strong>
+      <p>
+        Research collaboration, academic opportunities,
+        and technology development.
+      </p>
+    </aside>
+  </div>
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+  <div class="container reveal">
+    <div class="section-label">01 / Introduction</div>
+    <h2>About Me</h2>
+
+    <div class="section-intro">
+      <p>
+        I am a doctoral researcher at BITS Pilani,
+        working in the broad area of electronic devices
+        and emerging technologies.
+      </p>
+
+      <p>
+        My work involves experimental investigation,
+        device characterization, data analysis,
+        and scientific communication.
+      </p>
+
+      <p>
+        I am interested in building meaningful academic
+        collaborations and exploring opportunities
+        in research and development.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+
+<section id="research" class="soft-section">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">02 / Research</div>
+      <h2>Selected Research</h2>
+      <p class="section-intro">
+        Details of ongoing and completed projects
+        will be added as they become available
+        for public presentation.
+      </p>
+    </div>
+
+    <div class="grid">
+      <article class="card reveal">
+        <div class="number">PROJECT 01</div>
+        <h3>Research Project 01</h3>
+        <p>Project description will be added.</p>
+
+        <details class="project-details">
+          <summary>View details</summary>
+          <p>
+            Research objectives, methodology,
+            and outcomes will be updated here.
+          </p>
+        </details>
+      </article>
+
+      <article class="card reveal">
+        <div class="number">PROJECT 02</div>
+        <h3>Research Project 02</h3>
+        <p>Project description will be added.</p>
+
+        <details class="project-details">
+          <summary>View details</summary>
+          <p>
+            Research objectives, methodology,
+            and outcomes will be updated here.
+          </p>
+        </details>
+      </article>
+
+      <article class="card reveal">
+        <div class="number">PROJECT 03</div>
+        <h3>Research Project 03</h3>
+        <p>Project description will be added.</p>
+
+        <details class="project-details">
+          <summary>View details</summary>
+          <p>
+            Research objectives, methodology,
+            and outcomes will be updated here.
+          </p>
+        </details>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PUBLICATIONS -->
+
+<section id="publications">
+  <div class="container reveal">
+    <div class="section-label">03 / Publications</div>
+    <h2>Publications</h2>
+
+    <div class="card">
+      <h3>Publication List</h3>
+      <p>
+        Peer-reviewed articles, conference papers,
+        and other publications will be listed here
+        after verification and public release.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+
+<section id="gallery" class="soft-section">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">04 / Gallery</div>
+      <h2>Research &amp; Academic Gallery</h2>
+      <p class="section-intro">
+        Selected images from research activities,
+        laboratories, and academic events
+        will be displayed here.
+      </p>
+    </div>
+
+    <div class="gallery-filters reveal">
+      <button class="filter-btn active" data-filter="all">
+        All
+      </button>
+      <button class="filter-btn" data-filter="research">
+        Research
+      </button>
+      <button class="filter-btn" data-filter="lab">
+        Laboratory
+      </button>
+      <button class="filter-btn" data-filter="events">
+        Events
+      </button>
+    </div>
+
+    <div class="grid" id="galleryGrid">
+      <article class="card gallery-card reveal"
+               data-category="research">
+        <div class="gallery-placeholder">
+          IMAGE PLACEHOLDER
+        </div>
+        <div class="gallery-caption">
+          <strong>Research Figure</strong>
+          <p>Image and caption to be added.</p>
+        </div>
+      </article>
+
+      <article class="card gallery-card reveal"
+               data-category="lab">
+        <div class="gallery-placeholder">
+          IMAGE PLACEHOLDER
+        </div>
+        <div class="gallery-caption">
+          <strong>Laboratory</strong>
+          <p>Image and caption to be added.</p>
+        </div>
+      </article>
+
+      <article class="card gallery-card reveal"
+               data-category="events">
+        <div class="gallery-placeholder">
+          IMAGE PLACEHOLDER
+        </div>
+        <div class="gallery-caption">
+          <strong>Academic Event</strong>
+          <p>Image and caption to be added.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CV -->
+
+<section id="cv">
+  <div class="container reveal">
+    <div class="section-label">05 / Academic Profile</div>
+    <h2>Curriculum Vitae</h2>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="section-label">Doctoral Research</div>
+        <h3>PhD — Electrical &amp; Electronics Engineering</h3>
+        <p>BITS Pilani, Pilani Campus</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="section-label">Postgraduate Education</div>
+        <h3>Master's Degree</h3>
+        <p>University of Delhi</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="section-label">Undergraduate Education</div>
+        <h3>Bachelor's Degree</h3>
+        <p>University of Delhi</p>
+      </div>
+    </div>
+
+    <p>
+      A downloadable academic CV will be added here.
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="soft-section">
+  <div class="container reveal">
+    <div class="section-label">06 / Connect</div>
+    <h2>Get in Touch</h2>
+
+    <div class="contact-box">
+      <h3>Research &amp; Professional Connections</h3>
+
+      <p>
+        I welcome opportunities for academic discussion,
+        research collaboration, and professional networking.
+      </p>
+
+      <div class="contact-links">
+        <!-- Replace placeholders with verified URLs -->
+        <span>LinkedIn: To be added</span>
+        <span>Google Scholar: To be added</span>
+        <span>ORCID: To be added</span>
+        <span>Email: To be added</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    &copy; <span id="year"></span> Rejaul Ali.
+    All rights reserved.
+  </div>
+</footer>
+
 <script>
-document.getElementById('year').textContent=new Date().getFullYear();const b=document.getElementById('menu'),links=document.getElementById('links');b.addEventListener('click',()=>{const open=links.classList.toggle('open');b.setAttribute('aria-expanded',String(open))});links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');b.setAttribute('aria-expanded','false')}));if('IntersectionObserver'in window){const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}}),{threshold:.08});document.querySelectorAll('.fade').forEach(el=>obs.observe(el))}else document.querySelectorAll('.fade').forEach(el=>el.classList.add('visible'));
+document.addEventListener("DOMContentLoaded", () => {
+
+  // Dynamic year
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+  // Mobile navigation
+  const menuToggle =
+    document.getElementById("menuToggle");
+
+  const navLinks =
+    document.getElementById("navLinks");
+
+  menuToggle.addEventListener("click", () => {
+    const isOpen = navLinks.classList.toggle("open");
+
+    menuToggle.setAttribute(
+      "aria-expanded",
+      String(isOpen)
+    );
+
+    menuToggle.textContent = isOpen ? "\u2715" : "\u2630";
+  });
+
+  // Close mobile navigation after selection
+  document.querySelectorAll(".nav-links a")
+    .forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.textContent = "\u2630";
+      });
+    });
+
+  // Scroll reveal
+  const revealItems =
+    document.querySelectorAll(".reveal");
+
+  if ("IntersectionObserver" in window) {
+    const revealObserver = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.08 }
+    );
+
+    revealItems.forEach(item =>
+      revealObserver.observe(item)
+    );
+  } else {
+    revealItems.forEach(item =>
+      item.classList.add("visible")
+    );
+  }
+
+  // Gallery filtering
+  const filterButtons =
+    document.querySelectorAll(".filter-btn");
+
+  const galleryCards =
+    document.querySelectorAll(".gallery-card");
+
+  filterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const filter = button.dataset.filter;
+
+      filterButtons.forEach(btn => {
+        btn.classList.remove("active");
+        btn.setAttribute("aria-pressed", "false");
+      });
+
+      button.classList.add("active");
+      button.setAttribute("aria-pressed", "true");
+
+      galleryCards.forEach(card => {
+        const show =
+          filter === "all" ||
+          card.dataset.category === filter;
+
+        card.hidden = !show;
+      });
+    });
+  });
+
+  // Navigation highlighting and progress
+  const sections =
+    document.querySelectorAll("main section[id]");
+
+  const navItems =
+    document.querySelectorAll(".nav-links a");
+
+  const progress =
+    document.getElementById("progress");
+
+  function updateScrollUI() {
+    const maxScroll =
+      document.documentElement.scrollHeight -
+      window.innerHeight;
+
+    const percentage = maxScroll > 0
+      ? window.scrollY / maxScroll * 100
+      : 0;
+
+    progress.style.width = percentage + "%";
+
+    let current = "";
+
+    sections.forEach(section => {
+      if (window.scrollY >= section.offsetTop - 160) {
+        current = section.id;
+      }
+    });
+
+    navItems.forEach(link => {
+      const active =
+        link.getAttribute("href") === "#" + current;
+
+      link.classList.toggle("active", active);
+
+      if (active) {
+        link.setAttribute("aria-current", "location");
+      } else {
+        link.removeAttribute("aria-current");
+      }
+    });
+  }
+
+  window.addEventListener(
+    "scroll",
+    updateScrollUI,
+    { passive: true }
+  );
+
+  window.addEventListener("resize", updateScrollUI);
+  updateScrollUI();
+
+});
 </script>
-</body></html>
+
+</body>
+</html>
