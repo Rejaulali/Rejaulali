@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0098)file:///C:/Users/rejau/Documents/Codex/2026-10-30/this-is-last-time-code-i/outputs/index.html#home -->
+
 <html lang="en" style="--section-space: 88px; --card-radius: 15px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   
   <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -558,7 +558,7 @@ body.editing {padding-right:380px}
   </div>
   <header class="nav">
    <div class="wrap nav-inner">
-    <a class="brand" href="file:///C:/Users/rejau/Documents/Codex/2026-10-30/this-is-last-time-code-i/outputs/index.html#home">
+    <a class="brand" href="#home">
      REJAUL ALI
      <b>
       ●
@@ -568,25 +568,25 @@ body.editing {padding-right:380px}
      ☰
     </button>
     <nav aria-label="Main navigation" class="nav-links" id="links">
-     <a href="file:///C:/Users/rejau/Documents/Codex/2026-10-30/this-is-last-time-code-i/outputs/index.html#home" class="active" aria-current="location">
+     <a href="#home" class="active" aria-current="location">
       Home
      </a>
-     <a href="file:///C:/Users/rejau/Documents/Codex/2026-10-30/this-is-last-time-code-i/outputs/index.html#about" class="">
+     <a href="#about" class="">
       About
      </a>
-     <a href="file:///C:/Users/rejau/Documents/Codex/2026-10-30/this-is-last-time-code-i/outputs/index.html#research" class="">
+     <a href="#research" class="">
       Research
      </a>
-     <a href="file:///C:/Users/rejau/Documents/Codex/2026-10-30/this-is-last-time-code-i/outputs/index.html#publications" class="">
+     <a href="#publications" class="">
       Publications
      </a>
-     <a href="file:///C:/Users/rejau/Documents/Codex/2026-10-30/this-is-last-time-code-i/outputs/index.html#gallery" class="">
+     <a href="#gallery" class="">
       Gallery
      </a>
-     <a href="file:///C:/Users/rejau/Documents/Codex/2026-10-30/this-is-last-time-code-i/outputs/index.html#cv">
+     <a href="#cv">
       CV
      </a>
-     <a href="file:///C:/Users/rejau/Documents/Codex/2026-10-30/this-is-last-time-code-i/outputs/index.html#contact">
+     <a href="#contact">
       Contact
      </a>
     </nav>
@@ -611,10 +611,10 @@ body.editing {padding-right:380px}
       </p>
       <p>I am currently working on the fabrication and study of TMDC-based memristive and neuromorphic devices, with a strong focus on next-generation electronic and memory technologies.</p>
       <div class="hero-actions">
-       <a class="btn primary" href="file:///C:/Users/rejau/Documents/Codex/2026-10-30/this-is-last-time-code-i/outputs/index.html#research">
+       <a class="btn primary" href="#research">
         Explore research ↗
        </a>
-       <a class="btn secondary" href="file:///C:/Users/rejau/Documents/Codex/2026-10-30/this-is-last-time-code-i/outputs/index.html#contact">
+       <a class="btn secondary" href="#contact">
         Get in touch
        </a>
       </div>
@@ -950,7 +950,15 @@ body.editing {padding-right:380px}
   </aside>
 
   <script>
-   const menu=document.getElementById('menu'),links=document.getElementById('links');
+   function normalizeSectionLinks(root) {
+ root.querySelectorAll('a[href]').forEach(a=>{
+  const href=a.getAttribute('href');
+  const match=href.match(/^(?:file:[^#]*)?#(home|about|research|publications|gallery|cv|contact)$/i);
+  if(match&&root.querySelector('[id="'+match[1].toLowerCase()+'"]'))a.setAttribute('href','#'+match[1].toLowerCase());
+ });
+}
+normalizeSectionLinks(document);
+const menu=document.getElementById('menu'),links=document.getElementById('links');
 menu.addEventListener('click',()=>{const open=links.classList.toggle('open');menu.setAttribute('aria-expanded',open);menu.textContent=open?'✕':'☰'});
 document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰'}));
 document.getElementById('year').textContent=new Date().getFullYear();
@@ -992,7 +1000,7 @@ function setEditing(on) {
  document.getElementById('font-control').value=styles.getPropertyValue('--body-font').trim();
  }
 }
-addEventListener('hashchange',()=>{if(location.hash==='#edit')setEditing(true)});
+addEventListener('hashchange',()=>{if(location.hash==='#edit')setEditing(true);update()});
 setEditing(location.hash==='#edit');
 document.getElementById('close-editor').onclick=()=>{setEditing(false);if(location.hash==='#edit')history.replaceState(null,'',location.pathname+location.search+'#home')};
 [['accent-color','--teal',''],['paper-color','--paper',''],['space-control','--section-space','px'],['radius-control','--card-radius','px'],['font-control','--body-font','']].forEach(([id,key,unit])=>document.getElementById(id).addEventListener('input',e=>document.documentElement.style.setProperty(key,e.target.value+unit)));
@@ -1011,6 +1019,7 @@ document.getElementById('remove-photo').onclick=()=>{const photo=document.getEle
 document.addEventListener('click',e=>{
  if(!document.body.classList.contains('editing')||editor.contains(e.target))return;
  const target=e.target.closest('a, .contact-links span');if(!target)return;
+ if(target.closest('.nav'))return;
  e.preventDefault();selectedLink=target;document.getElementById('link-control').value=target.getAttribute('href')||'';
  status.textContent='Link selected: '+target.textContent.trim();
 },true);
@@ -1024,6 +1033,7 @@ document.getElementById('apply-link').onclick=()=>{
 document.addEventListener('paste',e=>{if(document.body.classList.contains('editing')&&e.target.closest('[contenteditable]')){e.preventDefault();document.execCommand('insertText',false,e.clipboardData.getData('text/plain'))}});
 document.getElementById('download-page').onclick=()=>{
  const copy=document.documentElement.cloneNode(true);
+ normalizeSectionLinks(copy);
  copy.querySelector('body').classList.remove('editing');copy.querySelector('#page-editor').hidden=true;
  copy.querySelectorAll('[contenteditable]').forEach(el=>el.removeAttribute('contenteditable'));
  copy.querySelector('#editor-status').textContent='';copy.querySelector('#link-control').value='';
